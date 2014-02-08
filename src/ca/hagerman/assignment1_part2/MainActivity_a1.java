@@ -22,13 +22,18 @@ public class MainActivity_a1 extends Activity {
 		        if (parent != null) {
 		        	TextView txtView = (TextView) parent.findViewById(R.id.textView1);
 		        	txtView.setText("The Change Button has been pressed " + i++ + " times");
+		        	
+		        	ImageView imgView = (ImageView) parent.findViewById(R.id.imageView1);
+		        	imgView.setVisibility(View.VISIBLE);
 		        }
 			}
 		});
 		
 		final Button button_2 = (Button) findViewById(R.id.button2);
 		button_2.setOnClickListener(new View.OnClickListener() {
+			
 			public void onClick(View v) {
+				i++;	
 				View parent = (View)v.getParent();
 		        if (parent != null) {
 		        	
@@ -41,6 +46,11 @@ public class MainActivity_a1 extends Activity {
 		        }
 			}
 		});		
+		
+	
+		
+		
+
 		
 		
 	}

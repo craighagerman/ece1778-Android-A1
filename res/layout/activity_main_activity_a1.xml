@@ -17,6 +17,17 @@
         android:layout_centerHorizontal="true"
         android:text="@string/top_label" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:visibility="visible"
+        android:contentDescription="@string/imgDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cavalier_sm" />
+
+
 	<Button
 	    android:id="@+id/button1"
 	    android:layout_width="wrap_content"
@@ -33,13 +44,6 @@
         android:layout_alignParentRight="true"
         android:text="@string/button2" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_below="@+id/textView1"
-        android:contentDescription="@string/imgDesc"
-        android:src="@drawable/cavalier0" />
+
 
 </RelativeLayout>
